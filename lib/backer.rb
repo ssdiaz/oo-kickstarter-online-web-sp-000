@@ -11,6 +11,14 @@ class Backer
   def back_project(project)
     @backed_projects << project
     #Project.add_backer(self.name)
+
+    if (self.backed_projects.nil?)
+      self.backed_projects = Project.new(project)
+    else
+      self.backed_projects.name = name
+    end
+
+
   end
 
 
