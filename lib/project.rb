@@ -1,6 +1,6 @@
 class Project
 
-  attr_accessor :title, :name
+  attr_accessor :title
   attr_reader :backers
 
 
